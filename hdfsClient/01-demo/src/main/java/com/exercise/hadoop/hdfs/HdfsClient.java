@@ -10,7 +10,7 @@ import java.net.URISyntaxException;
 import java.util.Arrays;
 
 public class HdfsClient {
-    private static String uri = "hdfs://node1:8020";
+    private static String uri = "hdfs://hadoop100:8020";
     private static String user = "root";
     private static String localPath = "D:\\test\\hadoop\\";
 
