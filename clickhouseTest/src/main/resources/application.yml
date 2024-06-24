@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    click:
+      driverClassName: ru.yandex.clickhouse.ClickHouseDriver
+      url: jdbc:clickhouse://xx.xx.xx.xx:8123/default
+      username: default
+      password: 123456
+      initialSize: 10
+      maxActive: 100
+      minIdle: 10
+      maxWait: 6000

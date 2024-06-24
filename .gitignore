@@ -46,3 +46,4 @@ temp/
 .settings/
 .project
 .classpath
+/hdfsClient/01-demo/mapreduce/out/

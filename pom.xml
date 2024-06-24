@@ -18,6 +18,7 @@
 
     <modules>
         <module>hdfsClient</module>
+        <module>clickhouseTest</module>
     </modules>
 
     <properties>
