@@ -1,8 +1,8 @@
 package mapreduce;
 
-import com.exercise.hadoop.mapreduce.WordCountDriver;
-import com.exercise.hadoop.mapreduce.WordCountMapper;
-import com.exercise.hadoop.mapreduce.WordCountReducer;
+import com.exercise.hadoop.mapreduce.workcount.WordCountDriver;
+import com.exercise.hadoop.mapreduce.workcount.WordCountMapper;
+import com.exercise.hadoop.mapreduce.workcount.WordCountReducer;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -34,8 +34,8 @@ public class MapreduceTest {
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(IntWritable.class);
             // 6 设置输入和输出路径
-            FileInputFormat.setInputPaths(job, new Path("mapreduce/hello.txt"));
-            FileOutputFormat.setOutputPath(job, new Path("mapreduce/workcount.txt"));
+            FileInputFormat.setInputPaths(job, new Path("input/hello.txt"));
+            FileOutputFormat.setOutputPath(job, new Path("output/workcount"));
             // 7 提交 job
             boolean result = job.waitForCompletion(true);
             System.exit(result ? 0 : 1);
