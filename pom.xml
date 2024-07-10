@@ -19,6 +19,8 @@
     <modules>
         <module>hdfsClient</module>
         <module>clickhouseTest</module>
+        <module>flink-demo</module>
+        <module>flink-demo/flink-01</module>
     </modules>
 
     <properties>
